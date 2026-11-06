@@ -51,7 +51,7 @@ public class Implementaciones {
         return Math.sqrt(Math.pow(distanciaX, 2) + Math.pow(distanciaY, 2));
     }
 
-    public int Ejercicio6(int n) {
+    public int  Ejercicio6(int n) {
         assert n >= 0 && n <= 9;
 
         int num1 = n;
@@ -65,6 +65,49 @@ public class Implementaciones {
         return num1 + num2 + num3;
     }
 
+    public String Ejercicio7(int segundos) {
+        assert segundos >= 0;
+
+        int horas = segundos / 3600;
+        int minutos = (segundos % 3600) / 60;
+        int segundosRestantes = segundos % 60;
+
+        return horas + ":" + minutos + ":" + segundosRestantes;
+    }
+
+    public String invertirTexto(String texto) {
+        assert texto != null;
+
+        StringBuilder invertido = new StringBuilder();
+
+        for (int i = texto.length() - 1; i >= 0; i--) {
+            invertido.append(texto.charAt(i));
+        }
+
+        return invertido.toString();
+    }
+
+    public boolean esPalindromo(String texto){
+        return texto.toLowerCase().equals(invertirTexto(texto.toLowerCase()));
+    }
+
+    public void Ejercicio12() {
+        for (int fila = 1; fila <= 10; fila++) {
+            for (int numero = 1; numero <= fila; numero++) {
+                System.out.print(numero);
+            }
+            System.out.println();
+        }
+    }
+
+    public void Ejercicio13(int filas) {
+        for (int fila = 1; fila <= filas; fila++) {
+            for (int numero = 1; numero <= fila; numero++) {
+                System.out.print("@");
+            }
+            System.out.println();
+        }
+    }
     //
 
     public ArrayList<Integer> equipaje = new ArrayList<>();
