@@ -5,5 +5,8 @@ public class Main {
         System.out.println(implementaciones.esPalindromo("SAras"));
 
         implementaciones.Ejercicio13(6);
+
+        implementaciones.Ejercicio14(6);
+
     }
 }

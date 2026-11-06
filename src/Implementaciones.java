@@ -91,6 +91,10 @@ public class Implementaciones {
         return texto.toLowerCase().equals(invertirTexto(texto.toLowerCase()));
     }
 
+    // TODO 9
+    // TODO 10
+    // TODO 11
+
     public void Ejercicio12() {
         for (int fila = 1; fila <= 10; fila++) {
             for (int numero = 1; numero <= fila; numero++) {
@@ -108,6 +112,23 @@ public class Implementaciones {
             System.out.println();
         }
     }
+
+    public void Ejercicio14(int filas) {
+        int filasInicial = filas;
+        StringBuilder espacios = new StringBuilder(" ");
+        for (int fila = 1; fila <= filasInicial; fila++) {
+            System.out.print(espacios);
+            for (int numero = 1; numero <= filas; numero++) {
+                System.out.print("*");
+            }
+            System.out.println();
+            filas--;
+            espacios.append(" ");
+        }
+    }
+
+
+
     //
 
     public ArrayList<Integer> equipaje = new ArrayList<>();
