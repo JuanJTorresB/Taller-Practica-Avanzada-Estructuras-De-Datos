@@ -141,6 +141,12 @@ public class Implementaciones {
     public void AddEquipajeBoing47(){
         int cargaEquipaje = 18000;
         int pesoMaxPorEquipaje = 500;
+        int cargaTotal = 0;
+        for (int peso : equipaje){
+            cargaTotal += peso;
+        }
+        int cargaMaximaReal = 18000-cargaTotal;
+        
     }
 
     private int ValorBulto(int kilo){
